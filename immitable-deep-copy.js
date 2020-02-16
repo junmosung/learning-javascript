@@ -7,18 +7,18 @@ var obj = {
 };
 
 var copyObject = function(target) {
-  var result = {};
+  var str = {};
 
   if (typeof target === "object" && target !== null) {
     for (prop in target) {
       console.log("target prop : " + prop);
-      result[prop] = copyObject(target[prop]);
+      str[prop] = copyObject(target[prop]);
     }
   } else {
-    result = target;
+    str = target;
   }
 
-  return result;
+  return str;
 };
 
 var obj2 = copyObject(obj);

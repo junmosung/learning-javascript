@@ -4,11 +4,11 @@ var user = {
 }
 
 var copyObject = function(target){
-  var result = {};
+  var str = {};
   for(prop in target){
-    result[prop] = target[prop]
+    str[prop] = target[prop]
   }
-  return result;
+  return str;
 }
 
 var user2 = copyObject(user);
